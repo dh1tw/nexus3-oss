@@ -770,6 +770,7 @@ false by default
 ```yaml
 nexus_nuget_api_key_realm: false
 nexus_npm_bearer_token_realm: false
+nexus_conan_bearer_token_realm: false
 nexus_docker_bearer_token_realm: false  # required for docker anonymous access
 ```
 
