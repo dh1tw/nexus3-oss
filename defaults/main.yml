@@ -97,6 +97,7 @@ nexus_rut_auth_realm: false
 # nexus_rut_auth_header: "CUSTOM_HEADER"
 nexus_ldap_realm: false
 nexus_docker_bearer_token_realm: false
+nexus_conan_bearer_token_realm: false
 
 # Enable/disable audit capability
 nexus_audit_enabled: false

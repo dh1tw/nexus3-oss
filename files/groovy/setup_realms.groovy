@@ -19,3 +19,6 @@ realmManager.enableRealm("LdapRealm", parsed_args.ldap_realm)
 
 // enable/disable the Docker Bearer Token Realm
 realmManager.enableRealm("DockerToken", parsed_args.docker_bearer_token_realm)
+
+// enable/disable the Conan Bearer Token Realm
+realmManager.enableRealm("ConanToken", parsed_args.conan_bearer_token_realm)
