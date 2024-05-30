@@ -196,6 +196,7 @@ nexus_config_r: false
 nexus_config_p2: false
 nexus_config_conda: false
 nexus_config_go: false
+nexus_config_conan: false
 
 nexus_content_selectors: []
 # example selector item :
@@ -278,6 +279,8 @@ nexus_blob_names: # Splited blob name list @ blob_vars.yml
   p2:
     blob: default
   conda:
+    blob: default
+  conan:
     blob: default
   go:
     blob: default
@@ -759,6 +762,21 @@ _nexus_repos_conda_defaults:
 nexus_repos_conda_proxy: []
 #   - name: conda-proxy
 #     remote_url: 'https://repo.continuum.io/pkgs/'
+
+# conan support
+_nexus_repos_conan_defaults:
+  blob_store: "{{ nexus_blob_names.conan.blob }}"
+  strict_content_validation: true
+  maximum_component_age: 1440 # Nexus gui default. For proxies only
+  maximum_metadata_age: 1440 # Nexus gui default. For proxies only
+  negative_cache_enabled: true # Nexus gui default. For proxies only
+  negative_cache_ttl: 1440 # Nexus gui default. For proxies only
+
+nexus_repos_conan_proxy: []
+#   - name: conan-proxy
+#     remote_url: 'https://center.conan.io'
+#     remote_username: ''
+#     remote_password: ''
 
 _nexus_repos_go_defaults:
   blob_store: "{{ nexus_blob_names.go.blob }}"

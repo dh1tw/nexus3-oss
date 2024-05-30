@@ -38,6 +38,7 @@ nexus_config_helm: true
 nexus_config_r: true
 nexus_config_conda: true
 nexus_config_go: true
+nexus_config_conan: true
 
 nexus_anonymous_access: true
 
